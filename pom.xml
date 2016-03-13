@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
    <modelVersion>4.0.0</modelVersion>
-   <groupId>es.dagaren.gladiator</groupId>
-   <artifactId>Gladiator</artifactId>
+   <groupId>es.genesis0809.ajedrez-gladiador</groupId>
+   <artifactId>Ajedrez-Gladiador</artifactId>
    <version>0.0.1-SNAPSHOT</version>
-   <name>Gladiator</name>
-   <description>Gladiator chess engine</description>
+   <name>Ajedrez-Gladiador</name>
+   <description>Ajedrez-Gladiador chess engine</description>
    
    <properties>
       <release.dir>${project.basedir}/releases/</release.dir>
@@ -41,11 +41,11 @@
                   <manifest>
                      <addClasspath>true</addClasspath>
                      <classpathPrefix>lib/</classpathPrefix>
-                     <mainClass>es.dagaren.gladiator.main.Main</mainClass>
+                     <mainClass>es.genesis0809.ajedrez-gladiador.main.Main</mainClass>
                   </manifest>
                   <manifestEntries>
                      <Class-Path>./</Class-Path>
-                     <Built-By>David Garcinuño Enríquez</Built-By>
+                     <Built-By>Inteligencia Artificial S5K</Built-By>
                   </manifestEntries>
                </archive>
             </configuration>
@@ -114,15 +114,15 @@
                            <fileset dir="${project.build.directory}/lib/" />
                         </copy>
                 
-                        <echo append="false" file="${release.dir}/gladiator.sh">#!/bin/bash${line.separator}</echo>
-                        <echo append="true" file="${release.dir}/gladiator.sh">${line.separator}</echo>
-                        <echo append="true" file="${release.dir}/gladiator.sh">SCRIPTS_DIR=$(dirname $0)${line.separator}</echo>
-                        <echo append="true" file="${release.dir}/gladiator.sh">GLADIATOR_JAR=$SCRIPTS_DIR/${project.build.finalName}.${project.packaging}${line.separator}</echo>
-                        <echo append="true" file="${release.dir}/gladiator.sh">java -Xmx2048M -jar "$GLADIATOR_JAR"${line.separator}</echo>
+                        <echo append="false" file="${release.dir}/ajedrez-gladiator.sh">#!/bin/bash${line.separator}</echo>
+                        <echo append="true" file="${release.dir}/ajedrez-gladiator.sh">${line.separator}</echo>
+                        <echo append="true" file="${release.dir}/ajedrez-gladiator.sh">SCRIPTS_DIR=$(dirname $0)${line.separator}</echo>
+                        <echo append="true" file="${release.dir}/ajedrez-gladiator.sh">GLADIATOR_JAR=$SCRIPTS_DIR/${project.build.finalName}.${project.packaging}${line.separator}</echo>
+                        <echo append="true" file="${release.dir}/ajedrez-gladiator.sh">java -Xmx2048M -jar "$GLADIATOR_JAR"${line.separator}</echo>
                 
-                        <echo file="${release.dir}/gladiator.bat">java -Xmx2048M -jar "%~dp0${project.build.finalName}.${project.packaging}"</echo> 
+                        <echo file="${release.dir}/ajedrez-gladiator.bat">java -Xmx2048M -jar "%~dp0${project.build.finalName}.${project.packaging}"</echo> 
               
-                        <chmod file="${release.dir}/gladiator.sh" perm="ugo+x" /> 
+                        <chmod file="${release.dir}/ajedrez-gladiator.sh" perm="ugo+x" /> 
 
                         <zip basedir="${release.dir}" destfile="${release.dir}/${project.build.finalName}.zip" update="true"  />
 
