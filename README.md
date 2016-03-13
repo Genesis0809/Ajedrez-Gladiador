@@ -1,21 +1,21 @@
 README
 ======
 
-¿Qué es gladiator?
+¿Qué es Ajedrez-Gladiador?
 ------------------
 
-Gladiator es un motor de ajedrez escrito en Java.y distribuido como un proyecto maven para facilitar 
+Ajedrez-Gladiador es un motor de ajedrez escrito en Java.y distribuido como un proyecto para facilitar 
 su construcción y gestión de dependencias.
 
 Es compatible con el protocolo XBoard/Winboard v2, por lo que puede ser utilizado desde cualquier
 interfaz gráfica de ajedrez que soporte motores de este tipo, como XBoard, Arena, etc.
 
-El código fuente de Gladiator está disponible bajo los terminos de la licencia open source GPL v3.
+El código fuente de Ajedrez-Gladiador está disponible bajo los terminos de la licencia open source GPL v3.
 
 Requisitos
 -----------
 
-Para poder ejecutar Gladiator es necesario que la máquina tenga instalada una máquina virtual de 
+Para poder ejecutar Ajedrez-Gladiador es necesario que la máquina tenga instalada una máquina virtual de 
 Java SE6, que es la versión mínima requerida.
 
 En el caso de querer generar la aplicación a partir de la última versión del código fuente disponible
@@ -26,22 +26,22 @@ Instalación
 -----------
 
 En primer lugar se crea el directorio en el que se desee que se almacenen el repositorio
-de Gladiator temporalmente  (por ejemplo, */tmp/gladiator/*), y se establece como el 
+de Ajedrez-Gladiator temporalmente  (por ejemplo, */tmp/ajedrezgladiador/*), y se establece como el 
 directorio de trabajo:
 
 ```bash
-$ mkdir /tmp/gladiator && cd /tmp/gladiator
+$ mkdir /tmp/ajedrezgladiador && cd /tmp/ajedrezgladiador
 ```
 
 Una vez heccho esto el siguiente paso consiste en descargar el repositorio utilizando *git*:
 
 
 ```bash
-$ git clone git://github.com/dagaren/gladiator-chess.git
+$ git clone git://github.com/ajedrezgladiador.git
 ```
 
 Después se abre con un editor de textos el fichero *pom.xml* que se encuentra dentro del
-directorio en el que se ha descargado el repositorio (*/tmp/gladiator/*) y se localizan
+directorio en el que se ha descargado el repositorio (*/tmp/ajedrezgladiador/*) y se localizan
 las líneas siguientes:
 
 ```xml
@@ -67,7 +67,7 @@ necesarios. Si todo funciona correctamente al final debe aparecer por consola un
 [INFO] BUILD SUCCESSFUL 
 [INFO] ------------------------------------------------------------------
 [INFO] Total time: 7 seconds 
-[INFO] Finished at: Tue Aug 07 08:56:27 CEST 2012 
+[INFO] Finished at: 
 [INFO] Final Memory: 26M/240M 
 [INFO] ------------------------------------------------------------------
 ```
@@ -82,5 +82,5 @@ Ejecución
 
 Contacto
 --------
-- Email: dagaren@gmail.com
-- Twitter: @dagaren
+- Email: genesis.torrest@ug.edu.ec
+
