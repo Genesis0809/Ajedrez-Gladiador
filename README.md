@@ -1,6 +1,13 @@
 README
 ======
 
+
+                             GRUPO #6 
+                     INTELIGENCIA ARTIFICIAL
+Docente:  Ing.Johnny Torres
+Curso: S5K
+Integrantes:  Torres, Chica, Kozisck
+
 ¿Qué es Ajedrez-Gladiador?
 ------------------
 
