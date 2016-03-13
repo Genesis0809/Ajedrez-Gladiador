@@ -1,8 +1,0 @@
-#! / Bin / bash
-
-LIBERACIÓN = $ 1
-
-Scripts_dir = $ ( nombredir $ 0 )
-GLADIATOR_JAR = $ scripts_dir /../releases/ $ LIBERACIÓN
-
-java-jar -Xmx2048M " $ GLADIATOR_JAR " 
